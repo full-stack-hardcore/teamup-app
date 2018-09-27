@@ -1,0 +1,8 @@
+{
+  "extends": "tslint-config-codingwise/react",
+  "rules": {
+    "semicolon": [true, "never"],
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false
+  }
+}
