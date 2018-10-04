@@ -1,0 +1,40 @@
+
+.why-us {
+    width: 100%;
+    display: flex;
+    padding: 0;
+}
+.image-container {
+  display: flex;
+  width: 60%;
+  height:100%
+}
+
+.shake-hands-img {
+  width: 100%;
+}
+
+.reasons-container {
+  margin-left: 15px;
+  display: inline-block;
+  width: 40%;
+  height:100%
+}
+
+.why-title{
+  margin-top: 75px;
+  margin-left: 50px;
+  font-size: 21px;
+  color: #384242;
+}
+
+.why-list ul{
+  margin: 15px 15px;
+  list-style: square;
+}
+
+.why-list ul li{
+  margin: 15px 15px;
+  list-style: square;
+  color: #738989;
+}

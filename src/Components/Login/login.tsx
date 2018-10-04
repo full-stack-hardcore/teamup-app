@@ -3,7 +3,7 @@ import * as React from 'react'
 import {NotificationContainer, NotificationManager} from 'react-notifications'
 import 'react-notifications/lib/notifications.css'
 import { Redirect } from 'react-router-dom'
-import './login.css'
+import Image from '../shared/image/image'
 
 class Login extends React.Component {
   state: { email: string, password: string, redirect: boolean  }
@@ -50,7 +50,19 @@ class Login extends React.Component {
         localStorage.setItem('authorization', res.data.token)
         this.setState({redirect: true})
     }).catch((error:any) => {
-      let errorMessage = error.response.data.error.error
+      let errorMessage = ''
+      if(typeof error.response === 'undefined'){
+        errorMessage = 'Unable to perform action, try again later.'
+        NotificationManager.error(errorMessage, 'Error' ,5000)
+
+        return
+      }
+      if(error.response.status === 500){
+        NotificationManager.error('Unable to perform action, try again later.', 'Error' ,5000)
+
+        return
+      }
+      errorMessage = error.response.data.error.error
       if(typeof (errorMessage) !== 'undefined'){
         NotificationManager.error(errorMessage, 'Error' ,5000)
       } else {
@@ -70,31 +82,38 @@ class Login extends React.Component {
     const password = this.state.password
 
     return (
-      <div className='stay-updated'>
-        <div className='gap'>
-          <h1>Login</h1>
-          <form
-            onSubmit={this.handleSubmit}
-            action='http://localhost:3000/api/login'
-            method='post'
-          >
-            <input
-              type='email'
-              placeholder='Your email'
-              name='email'
-              value={email}
-              onChange={(event) => this.onChangeEmail(event)}
-            />
-            <br/>
-            <input
-              type='password'
-              placeholder='Your password'
-              name='password'
-              value={password}
-              onChange={(event) => this.onChangePassword(event)}
-            />
-            <button>Log in</button>
-          </form>
+      <div className='login-container'>
+        <div className="start-now">
+          <p>Log in to start working on your dreams, or finding great project where you can contribute to!</p>
+        </div>
+        <div className="content-container">
+          <div className="login-text">
+            <Image className="meeting-img" src="meeting.jpg" />
+          </div>
+          <div className='login-form'>
+            <form
+              onSubmit={this.handleSubmit}
+              action='http://localhost:3000/api/login'
+              method='post'
+            >
+              <input
+                type='email'
+                placeholder='Your email'
+                name='email'
+                value={email}
+                onChange={(event) => this.onChangeEmail(event)}
+              />
+              <br/>
+              <input
+                type='password'
+                placeholder='Your password'
+                name='password'
+                value={password}
+                onChange={(event) => this.onChangePassword(event)}
+              />
+              <button className="btn-login">Log in</button>
+            </form>
+          </div>
         </div>
         {this.renderRedirect()}
         <NotificationContainer/>

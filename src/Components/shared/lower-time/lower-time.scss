@@ -1,0 +1,40 @@
+
+.lower-time {
+  width: 100%;
+  display: flex;
+  padding: 0;
+}
+
+.image-container {
+display: flex;
+width: 50%;
+height:100%
+}
+
+.pc-img {
+width: 100%;
+}
+
+.lower-container {
+margin-left: 15px;
+display: inline-block;
+width: 50%;
+height:100%
+}
+
+.lower-title{
+margin-top: 75px;
+margin-left: 80px;
+font-size: 21px;
+color: #384242;
+}
+
+.lower-description {
+  margin-left: 40px;
+
+}
+.lower-description p{
+  margin: 15px 15px;
+  list-style: square;
+  color: #738989;
+}

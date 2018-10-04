@@ -1,0 +1,98 @@
+.create-container, .user-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.content-container {
+  display: flex;
+}
+
+.start-now {
+  width:100%;
+  margin: 20px 0px;
+}
+
+.create-text, .create-form {
+  width: 50%;
+}
+
+.meeting-img {
+  width:200%;
+}
+
+
+.edit-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.center{
+  text-align: center;
+}
+
+.user-container {
+  width: 80%;
+  margin:auto;
+}
+
+.user-data {
+  margin:auto;
+  margin-top: 50px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-color: #bce8f1;
+  background-color: #fff;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.data-header {
+  text-align: unset;
+  width:100%;
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #bce8f1;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.data-header p{
+  margin-left: 10px;
+}
+
+form .btn-edit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.user-delete .btn-confirm-delete{
+  padding: 5px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left:auto;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}

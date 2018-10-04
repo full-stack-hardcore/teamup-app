@@ -1,0 +1,55 @@
+footer {
+  width:100%;
+  border-top: solid 1px #cfd6d6;
+  background-color: white;
+}
+
+.footer-container {
+  margin-right: auto;
+  height: 70px;
+  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+
+}
+
+.footer-list {
+  margin: auto;
+  margin-top: 25px;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.footer-menu-item {
+  margin-left: 15px;
+  margin-right: 10px;
+  font-weight: 100;
+  display: inline-block;
+}
+
+.footer-login {
+  background-color: #738989;
+  border-radius: 50%;
+  color: white;
+  padding: 14px 0px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  margin-right: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.welcome {
+  text-align: center
+}
+
+a:hover {
+  opacity: 0.8;
+}

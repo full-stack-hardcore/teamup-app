@@ -1,7 +1,29 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
 
-input[type=email], input[type=password] {
+.login-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.content-container {
+  display: flex;
+}
+
+.start-now {
+  width:100%;
+  margin: 20px 0px;
+}
+
+.login-text, .login-form {
+  width: 50%;
+}
+
+.meeting-img {
+  width:200%;
+}
+
+.login-form form input[type=email], .login-form form input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -10,7 +32,7 @@ input[type=email], input[type=password] {
     box-sizing: border-box;
 }
 
-button {
+.btn-login {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;

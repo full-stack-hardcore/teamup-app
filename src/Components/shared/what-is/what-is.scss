@@ -1,0 +1,52 @@
+
+
+.what-container {
+  margin-left: 15px;
+  display: flex;
+  width: 100%;
+  height:100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.what-is {
+  width: 100%;
+  height: 250px;
+  background: #cfd6d6;
+  padding: 0;
+}
+
+.what-info {
+  width: 50%;
+}
+
+.what-title {
+  margin-top: 30px;
+  margin-left: 20%;
+  font-size: 21px;
+  color: #384242;
+}
+
+.what-description p{
+  margin: 15px 15px;
+  list-style: square;
+  color: #738989;
+}
+
+.how-info {
+  margin-top: 70px;
+  width: 50%;
+}
+
+.how-title {
+  margin-top: 30px;
+  margin-left: 20%;
+  font-size: 21px;
+  color: #384242;
+}
+
+.how-description p{
+  margin: 15px 15px;
+  list-style: square;
+  color: #738989;
+}

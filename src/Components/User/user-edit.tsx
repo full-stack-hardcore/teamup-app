@@ -92,16 +92,22 @@ class UserEdit extends React.Component {
     const email = this.state.email
 
     return (
-      <div className="stay-updated">
-        {this.renderRedirect()}
-        <div className="gap">
-          <h1>User Edit</h1>
-          <form
+
+      <div className="user-container">
+        <div className="user-data">
+            <div className="data-header">
+              <p>
+                Edit your information
+              </p>
+            </div>
+            <br/>
+            <form
             onSubmit={this.handleSubmit}
             action="http://localhost:3000/api/user"
             method="patch"
           >
             <input
+              className="edit-input"
               type="text"
               placeholder="Your name"
               name="name"
@@ -110,6 +116,7 @@ class UserEdit extends React.Component {
             />
             <br/>
             <input
+              className="edit-input"
               type="email"
               placeholder="Your email"
               name="email"
@@ -117,9 +124,10 @@ class UserEdit extends React.Component {
               onChange={(event) => this.onChangeEmail(event)}
             />
             <br/>
-            <button>Edit</button>
+            <button className="btn-edit">Edit</button>
           </form>
         </div>
+        {this.renderRedirect()}
         <NotificationContainer/>
       </div>
     )

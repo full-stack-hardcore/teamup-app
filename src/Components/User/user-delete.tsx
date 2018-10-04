@@ -40,19 +40,25 @@ class UserDelete extends React.Component {
 }
   render() {
     return (
-      <div className="stay-updated">
-        {this.renderRedirect()}
-        <div className="gap">
-          <h2 className="center">Are you sure you want to delete your user?</h2>
+      <div className="user-container">
+        <div className="user-data">
+          <div className="data-header">
+            <p>
+              Are you sure you want to delete your user?
+            </p>
+          </div>
           <form
+            className="user-delete"
             onSubmit={this.handleSubmit}
             action="http://localhost:3000/api/user"
             method="delete"
           >
-            <br/>
-            <button className="deletebtn">Click here to delete yourself</button>
+            <div className="center">
+              <button className="btn-confirm-delete">Click here to delete yourself</button>
+            </div>
           </form>
         </div>
+        {this.renderRedirect()}
         <NotificationContainer/>
       </div>
     )
