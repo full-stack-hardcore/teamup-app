@@ -1,0 +1,94 @@
+
+.user-profile {
+  width: 80%;
+  margin:auto;
+}
+
+.table-container {
+  margin-top: 70px;
+}
+
+.user-table {
+  margin:auto;
+  width: 80%;
+  margin-bottom: 20px;
+  border-color: #bce8f1;
+  background-color: #fff;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.table-header {
+  text-align: unset;
+  width:100%;
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding: 10px 15px;
+  border: 1px solid #bce8f1;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.table-footer tr td{
+  padding-top: 20px;
+  left: 0;
+  text-align: unset;
+}
+
+.user-profile-img {
+  width: 40%;
+  vertical-align: top;
+}
+
+.table-data {
+  width: 50%;
+  vertical-align: top;
+}
+
+.data-description{
+  padding-top: 15px;
+  width: 20%;
+}
+
+.data-information{
+  padding-top: 15px;
+  width: 20%;
+}
+
+.image-container {
+  margin: 10px 15px;
+}
+
+.dog-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.btn-edit {
+  padding: 5px 10px;
+  margin: 0px 0px 15px 0px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  margin: 0px 15px 15px 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}

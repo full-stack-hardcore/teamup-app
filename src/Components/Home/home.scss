@@ -1,4 +1,4 @@
-a {
+.loginbtn {
   background-color: #4CAF50;
   color: white;
   padding: 14px 0px;
@@ -26,6 +26,9 @@ a:hover {
   background-color: #f44336;
 }
 
-.container {
-  padding: 16px;
+.home-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: block
 }

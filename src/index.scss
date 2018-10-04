@@ -1,0 +1,20 @@
+@import 'style/palette';
+@import 'style/reset';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+@import 'components/home/home';
+@import 'components/shared/why-us/why-us';
+@import 'components/shared/what-is/what-is';
+@import 'components/shared/lower-time/lower-time';
+@import 'components/shared/user-profile/user-profile';
+@import 'components/layout/layout';
+@import 'components/layout/header/header';
+@import 'components/layout/footer/footer';
+@import 'components/login/login';
+@import 'components/user/user';
